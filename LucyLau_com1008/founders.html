@@ -1,0 +1,98 @@
+<!-- Code by Lucy Lau -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Puzlr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/founders.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="flex-row">
+
+            <a href="index.html" id="logo-link">
+                <img src="images/logo.png" alt="logo" id="logo">
+            </a>
+            
+            <a id="menu-toggle" onclick="menuFunction()">Menu</a>
+
+        </div>
+
+        <nav class="main-menu">
+            <ul class="simple-toggle" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="founders.html">Founders</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="game.html">Game</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="wrapper">
+        <main>
+            
+            <div>
+                <img class="pic" src="images/me.png" alt="Photo of Lucy">
+                <div class="text">
+                    <h1>Lucy</h1>
+                    <p>The original founder of Puzlr. At only 18 years old, she started Puzlr originally for making crossword puzzles. Pretty early on she realised that only making crosswords was boring, and so started experimenting with developing all types of games: point and clicks, rpgs and even horror to name a few. Eventually the company evolved into the Puzlr everyone knows today.</p>
+                </div>
+            </div>
+
+            <div>
+                <img class="pic" src="images/leo.png" alt="Photo of Leo">
+                <div class="text">
+                    <h1>Leo</h1>
+                    <p>Leo was Lucy's pet cat, until one day he suddenly became a human (nobody knows why but oh well). He was apparently an expert coder, and became Puzlr's main programmer. There have been no signs of Leo reverting back to a cat.</p>
+                </div>
+            </div>
+
+            <div>
+                <img class="pic" src="images/albert.png" alt="Photo of Albert Turing">
+                <div class="text">
+                    <h1>Albert</h1>
+                    <p>Claiming to be the reincarnation of "Albert Turing" (supposedly referring to famous computer scientist, "Alan Turing"), he approached Lucy while Puzlr was still young. She was skeptical at first, as would most people be when confronted with the self proclaimed reincarnation of Alan Turing, however she did not ignore his impressive skills and invited him to work for Puzlr. Mysteriously, Albert disappeared without a trace on 23rd June, 2016. If anyone has any information, please contact us on our contact page.</p>
+                </div>
+            </div>
+
+            <p>*these are fictitious people</p>
+
+        </main>
+    </div>
+
+    <footer>
+        <ul id="foot-nav">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+    </footer>
+
+
+    
+</body>
+
+<script>
+    "use strict";
+
+    function menuFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display == "block") {
+            x.style.display = "none";
+        }
+        else {
+            x.style.display = "block";
+        }
+    }
+
+</script>
+
+</html>

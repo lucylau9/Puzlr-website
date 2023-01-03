@@ -1,0 +1,84 @@
+<!-- Code by Lucy Lau -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Puzlr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/puzlr.css">
+</head>
+
+<body class="home">
+
+    <header>
+        <div class="flex-row">
+
+            <a href="index.html" id="logo-link">
+                <img src="images/logo.png" alt="logo" id="logo">
+            </a>
+            <a id="menu-toggle" onclick="menuFunction()">Menu</a>
+
+        </div>
+
+        <nav class="main-menu">
+            <ul class="simple-toggle" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="founders.html">Founders</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="game.html">Game</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="wrapper">
+        <main>
+            <figure>
+                <img src="images/mainImage.png" alt="Adventure game art." id="mainImage">
+            </figure>
+
+            <div id="home-text">
+                <p>
+                    Almost every child has played a web based game at some point in their lives, from point-and-clicks to text adventures, the fun and creativity of these games are endless.
+                </p>
+                <br>
+                <p>
+                    Our company, Puzlr, aims to develop fun and educational web games and puzzles for children. We believe that learning should be a fun and engaging activity - not a boring and repetitive one. Everyone working in our team has experience and passion for learning and gaming, and their enthusiasm reflects in our projects.
+                </p>
+            </div>
+
+        </main>
+    </div>
+
+    <footer>
+        <ul id="foot-nav">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+    </footer>
+
+
+    
+</body>
+
+<script>
+    "use strict";
+
+    function menuFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display == "block") {
+            x.style.display = "none";
+        }
+        else {
+            x.style.display = "block";
+        }
+    }
+
+</script>
+
+</html>

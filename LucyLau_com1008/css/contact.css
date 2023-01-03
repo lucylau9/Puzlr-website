@@ -1,0 +1,227 @@
+/* Code by Lucy Lau */
+
+body {
+	font-family: 'Outfit', sans-serif;
+    color: rgb(64, 24, 74);
+}
+
+/* header */
+
+.flex-row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+header {
+	background-color: white;
+    border-bottom: 3px solid rgb(64, 24, 74);
+}
+
+/* logo */
+
+#logo-link {
+	width: 50%;
+}
+
+#logo {
+	width: 100%;
+	max-width: 250px;
+}
+
+/* menu - https://www.w3schools.com/howto/howto_js_mobile_navbar.asp */
+
+.main-menu {
+	background-color: rgb(165, 45, 165);
+	overflow: hidden;
+	position: relative;
+}
+
+.main-menu #menu {
+	display: none;
+}
+
+.simple-toggle li {
+	font-weight: bold;
+	padding: 0.5rem;
+	text-align: center;
+	border: 0.5px solid black;
+	border-collapse: collapse;
+}
+
+#menu-toggle {
+	font-weight: bold;
+	text-align: center;
+}
+
+#menu-toggle:hover {
+	background-color: white;
+	color: blue;
+	cursor: pointer;
+}
+
+nav a {
+	text-decoration: none;
+	color: rgb(255, 235, 254);
+}
+
+/* footer */
+
+footer #foot-nav{
+	background-color: purple;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-right: 3%;
+	font-weight: bold;
+	font-size: 1.3rem;
+	text-align: right;
+}
+
+footer #foot-nav li {
+	padding-bottom: 6px;
+}
+
+footer #foot-nav a {
+	text-decoration: none;
+	color: rgb(255, 235, 254);
+}
+
+footer #foot-nav a:hover {
+	text-decoration-line: underline;
+}
+
+/* main */
+
+h1 {
+    font-size: 2rem;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: rgb(64, 24, 74);
+    padding-top: 15px;
+}
+
+main p {
+	margin: 0 3% 10px;
+}
+
+/* table */
+
+table {
+    margin: 10px;
+}
+
+table tr td {
+    padding: 5px;
+    padding-left: 10px;
+}
+
+table .table-head {
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    font-weight: bold;
+    color: rgb(64, 24, 74);
+    padding-top: 15px;
+}
+
+/* form */
+
+form {
+    margin: 0 auto 0.5em;
+	width: 85%;
+	padding: 1em;
+	padding-bottom: 0;
+	border: 2px solid rgb(64, 24, 74);
+	font-size: 1.5em;
+}
+
+form li {
+	padding-bottom: 0.5em;
+}
+
+label {
+	display: inline-block;
+	width: 60px;
+	text-align: right;
+	padding-right: 1em;
+	padding-bottom: 5px;
+}
+
+input, textarea {
+	font-size: 0.8em;
+	font-family: "Outfit", sans-serif;
+}
+
+textarea {
+	vertical-align: top;
+	width: 100%;
+}
+
+button {
+	font-size: 1em;
+	font-family: "Outfit", sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+
+	header {
+		border: none;
+	}
+
+	/* menu */
+
+	#menu-toggle {
+		display: none;
+	}
+
+	.main-menu #menu {
+		display: flex !important;
+	}
+
+	.simple-toggle li {
+		border: none;
+	}
+
+	#menu {
+		padding-top: 7px;
+		padding-bottom: 7px;
+		padding-right: 4%;
+		padding-left: 2%;
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+
+	#menu li {
+		padding-right: 50px;
+	}
+
+	/* logo */
+
+	#logo-link {
+		width: 250px;
+	}
+
+	.flex-row {
+		padding-left: 2%;
+	}
+
+	/* wrapper */
+	
+	#wrapper {
+		width: 75%;
+		margin: 0 auto;
+	}
+
+	h2 {
+		padding-left: 5%;
+		margin: 0 auto;
+	}
+
+}

@@ -1,0 +1,120 @@
+<!-- Code by Lucy Lau -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Puzlr</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+
+
+
+    <header>
+        <div class="flex-row">
+
+            <a href="index.html" id="logo-link">
+                <img src="images/logo.png" alt="logo" id="logo">
+            </a>
+            <a id="menu-toggle" onclick="menuFunction()">Menu</a>
+
+        </div>
+
+        <nav class="main-menu">
+            <ul class="simple-toggle" id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="founders.html">Founders</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="game.html">Game</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div id="wrapper">
+
+        <main>
+
+            <h1>Contact us</h1>
+
+            <table>
+
+                <tr>
+                    <td class="table-head">Telephone:</td>
+                    <td>07734 112654</td>
+                </tr>
+
+                <tr>
+                    <td class="table-head">Address:</td>
+                    <td>74 Sommestreet<br>S10 4JX</td>
+                </tr>
+
+            </table>
+
+            <h2>Email us</h2>
+
+            <form action="mailto:llau3@sheffield.ac.uk?subject=Enquiry" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" id="name" required>
+                    </li>
+
+                    <li>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email" required>
+                    </li>
+
+                    <li>
+                    <label for="message">Message:</label>
+                    </li>
+
+                    <li>
+                        <textarea id="message" name="message"></textarea>
+                    </li>
+
+                    <li>
+                        <button type="submit">Send</button>
+                    </li>
+                </ul>
+            </form>
+
+            <p>The data you enter will not be saved anywhere - its only purpose is for you to be able to contact us.</p>
+
+        </main>
+    </div>
+
+    <footer>
+        <ul id="foot-nav">
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+    </footer>
+
+
+    
+</body>
+
+<script>
+    "use strict";
+
+    function menuFunction() {
+        var x = document.getElementById("menu");
+        if (x.style.display == "block") {
+            x.style.display = "none";
+        }
+        else {
+            x.style.display = "block";
+        }
+    }
+
+</script>
+
+</html>
